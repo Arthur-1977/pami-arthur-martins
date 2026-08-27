@@ -1,0 +1,81 @@
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package calculadora;
+
+/**
+ *
+ * @author Aluno CA
+ */
+public class Calculadora {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Operacao op = new Operacao(); 
+        op.soma(4, 3);
+        op.imprimirAd();
+        op.subtracao(10, 6);
+        op.imprimirSb();
+        op.multiplicacao(5, 7);
+        op.imprimirMt();
+        op.divisao(8, 2);
+        op.imprimirDv();
+    }
+    
+}
+
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package calculadora;
+
+/**
+ *
+ * @author Aluno CA
+ */
+public class Operacao {
+    int maisT;
+    int menosT;
+    int multiT;
+    float diviT;
+    
+    public int soma (int a, int b){
+          
+        maisT = a + b;
+        return maisT;
+    }
+    public void imprimirAd() {
+        System.out.println("Valor da soma: " + maisT);
+    }
+        
+    public int subtracao (int a, int b) {
+        menosT = a - b;
+        return menosT;
+    }
+    public void imprimirSb() {
+         System.out.println("Valor da subtração: " + menosT);
+    }
+    
+    public int multiplicacao(int a, int b) {
+        multiT = a * b;
+        return multiT;
+    }
+    public void imprimirMt(){
+        System.out.println("valor da multiplicação: " + multiT);
+    }
+    
+    public float divisao (float a, float b){
+        diviT = a / b;
+        return diviT;
+    }
+    public void imprimirDv (){
+        System.out.println("Valor da divisão: " + diviT);
+    }
+}
