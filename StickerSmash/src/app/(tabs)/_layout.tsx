@@ -4,7 +4,9 @@ export default function TabLayout() {
   return (
     <NativeTabs
       tintColor="#ffd33d"
-    >
+      backgroundColor="#25292e"
+      indicatorColor="rgba(255, 211, 61, 0.2)"
+      rippleColor="rgba(255, 211, 61, 0.3)">
       <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
